@@ -9,8 +9,7 @@ analysis of Android applications written in Java (used to check the permissions 
 apps) and Python (used to compute a risk value based on apps' permissions). The tool
 uses classification techniques through *scikit-learn*, a machine learning library for
 Python, in order to generate a numeric risk value between 0 and 100 for a given app.
-In particular, the following classifiers of *scikit-learn* are used in **RiskAnalyzer**
-(this list is chosen after extensive empirical assessments):
+In particular, the following classifiers of *scikit-learn* are used in **RiskAnalyzer**:
 * Support Vector Machines (SVM)
 * Multinomial Naive Bayes (MNB)
 * Gradient Boosting (GB)
@@ -33,19 +32,15 @@ classifiers, which then compute a risk value.
 
 ## ❱ Demo
 
-You can browse the full experimental results through a web interface and calculate the
-risk of new applications (by uploading the `.apk` file). Below you can see a brief
-demo of RiskAnalyzer:
-
+Results through a web interface and calculating the risk of new applications (by uploading the `.apk` file). A brief demo of RiskAnalyzer:
 ![Web](https://github.com/akriti-upadhyay/RiskAnalyzer/blob/master/docs/demo/web.gif)
 
 
 
 ## ❱ Installation & Usage
 
-To get the working copy of RiskAnalyzer on your own computer:
-By [using directly the source code](#from-source) in a `Python 3` environment. The first thing to do is to get a local copy of this repository, so open up a
-terminal in the directory where you want to save the project and clone the repository:
+To run RiskAnalyzer on your own computer:
+By [using directly the source code](#from-source) in a `Python 3` environment. The first thing to do is to get a local copy of this repository, open up a terminal in the directory where you want to save the project and clone the repository:
 
 ```Shell
 $ git clone https://github.com/akriti-upadhyay/RiskAnalyzer.git
@@ -57,9 +52,7 @@ $ git clone https://github.com/akriti-upadhyay/RiskAnalyzer.git
 
 To use RiskAnalyzer you need `Python 3` (at least `3.7`), `Java` (at least version `8`)
 and a tool to extract the content of `RiskAnalyzer/app/database/permission_db.7z`
-archive (e.g., `p7zip-full` can be used for this task in Ubuntu). Note: although
-possible, the installation of some of the Python libraries is not straightforward
-on Windows, the usage of a Linux distribution such as Ubuntu is advised.
+archive. Note: Usage of a Linux distribution such as Ubuntu is advised.
 
 #### Install
 
@@ -92,10 +85,4 @@ $ python3 app/app.py
 
 $ # Navigate to http://localhost:5000/ to use RiskAnalyzer.
 ```
-
-`NOTE:` the repository already contains the pre-trained models for the used
-classifiers, if you want to train the models again (e.g., to use a newer version of
-*scikit-learn*) just delete the contents of `app/models/` directory. The models will
-be recreated from the source data the next time an application is analyzed.
-
 
