@@ -33,6 +33,7 @@ classifiers, which then compute a risk value.
 ## ❱ Demo
 
 Results through a web interface and calculating the risk of new applications (by uploading the `.apk` file). A brief demo of RiskAnalyzer:
+
 ![Web](https://github.com/akriti-upadhyay/RiskAnalyzer/blob/master/docs/demo/web.gif)
 
 
