@@ -37,7 +37,7 @@ You can browse the full experimental results through a web interface and calcula
 risk of new applications (by uploading the `.apk` file). Below you can see a brief
 demo of RiskAnalyzer:
 
-![Web](https://raw.githubusercontent.com/ClaudiuGeorgiu/RiskAnalyzer/master/docs/demo/web.gif)
+![Web](https://github.com/akriti-upadhyay/RiskAnalyzer/blob/master/docs/demo/web.gif)
 
 
 
