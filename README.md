@@ -41,7 +41,7 @@ Results through a web interface and calculating the risk of new applications (by
 ## ❱ Installation & Usage
 
 To run RiskAnalyzer on your own computer:
-By [using directly the source code](#from-source) in a `Python 3` environment. The first thing to do is to get a local copy of this repository, open up a terminal in the directory where you want to save the project and clone the repository:
+By [using directly the source code](#from-source) in a `Python 3` environment. The first thing to do is to get a local copy of this repository. Hence, clone the repository:
 
 ```Shell
 $ git clone https://github.com/akriti-upadhyay/RiskAnalyzer.git
@@ -51,9 +51,7 @@ $ git clone https://github.com/akriti-upadhyay/RiskAnalyzer.git
 
 #### Prerequisites
 
-To use RiskAnalyzer you need `Python 3` (at least `3.7`), `Java` (at least version `8`)
-and a tool to extract the content of `RiskAnalyzer/app/database/permission_db.7z`
-archive. Note: Usage of a Linux distribution such as Ubuntu is advised.
+To use RiskAnalyzer you need `Python 3` (at least `3.7`), `Java` (at least version `8`). Usage of a Linux distribution such as Ubuntu is advised.
 
 #### Install
 
@@ -66,8 +64,7 @@ $ # Make sure to run the commands in RiskAnalyzer/ directory.
 $ # Extract permission_db.db from app/database/permission_db.7z archive and put 
 $ # it into app/database/ directory.
 
-$ # The usage of a virtual environment is highly recommended, e.g., virtualenv.
-$ # If not using virtualenv (https://virtualenv.pypa.io/), skip the next 2 lines.
+$ # Create a virtual environment.
 $ virtualenv -p python3 venv
 $ source venv/bin/activate
 
@@ -81,7 +78,7 @@ RiskAnalyzer is now ready to be used, run the following command to start the web
 interface of the tool:
 
 ```Shell
-$ # Make sure to run the command in RiskAnalyzer/ directory.
+$ # Run the command in RiskAnalyzer/ directory.
 $ python3 app/app.py
 
 $ # Navigate to http://localhost:5000/ to use RiskAnalyzer.
